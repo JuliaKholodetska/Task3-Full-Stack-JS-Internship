@@ -8,7 +8,7 @@ export default function HomeScreen() {
             <div className="row center">
                 {
                     data.products.map(product => (
-                        <Product key={product._id} product={product}></Product>
+                        <Product key={product.id} product={product}></Product>
                     ))
                 }
             </div>

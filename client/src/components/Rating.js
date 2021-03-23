@@ -2,13 +2,14 @@ import React from 'react'
 
 export default function Rating(props) {
     const { rating, numReviews } = props;
+    let ratings = [];
+    for (let i = 1; i < 5; i++) {
+        ratings.push(
+            <span><i className={rating >= i ? "fa fa-star" : rating >= i - 0.5 ? 'fa fa-star-half-o' : 'fa fa-star-o'}></i></span>)
+    }
     return (
         <div className="rating">
-            <span><i className={rating >= 1 ? "fa fa-star" : rating >= 0.5 ? 'fa fa-star-half-o' : 'fa fa-star-o'}></i></span>
-            <span><i className={rating >= 2 ? "fa fa-star" : rating >= 1.5 ? 'fa fa-star-half-o' : 'fa fa-star-o'}></i></span>
-            <span><i className={rating >= 3 ? "fa fa-star" : rating >= 2.5 ? 'fa fa-star-half-o' : 'fa fa-star-o'}></i></span>
-            <span><i className={rating >= 4 ? "fa fa-star" : rating >= 3.5 ? 'fa fa-star-half-o' : 'fa fa-star-o'}></i></span>
-            <span><i className={rating >= 5 ? "fa fa-star" : rating >= 4.5 ? 'fa fa-star-half-o' : 'fa fa-star-o'}></i></span>
+            {ratings.map(item => item)}
             <span>{numReviews + ' reviews'}</span>
         </div>
     );
