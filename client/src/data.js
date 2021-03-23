@@ -110,7 +110,7 @@ const data = {
         },
         {
             id: '10',
-            name: 'Inglot Multi-Action Toner (115 ml) – Normal Skin',
+            name: 'Inglot Multi-Action Toner',
             category: 'Face',
             image: '/images/p-10.jpg',
             price: 19,

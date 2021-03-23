@@ -2,7 +2,7 @@ const data = {
     products: [
         {
             id: '1',
-            name: 'Inglot All covered under eye concealer',
+            name: 'Inglot All covered concealer',
             category: 'Face',
             image: '/images/p-1.jpg',
             price: 22,
@@ -14,7 +14,7 @@ const data = {
         },
         {
             id: '2',
-            name: 'Inglot Sparkler face eyes body highlighter',
+            name: 'Inglot Sparkler highlighter',
             category: 'Face',
             image: '/images/p-2.jpg',
             price: 25,
@@ -110,7 +110,7 @@ const data = {
         },
         {
             id: '10',
-            name: 'Inglot Multi-Action Toner (115 ml) – Normal Skin',
+            name: 'Inglot Multi-Action Toner',
             category: 'Face',
             image: '/images/p-10.jpg',
             price: 19,
