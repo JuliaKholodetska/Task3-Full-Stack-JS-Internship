@@ -3,11 +3,13 @@ import Rating from '../components/Rating';
 import data from '../data';
 import { Link } from 'react-router-dom'
 
-export default function ProductScreen(props) {
+export default function ProductPage(props) {
     const product = data.products.find(x => x.id === props.match.params.id);
+
     if (!product) {
         return <div>Product Not Found</div>;
     }
+
     return (
         <div>
             <Link to="/">Back to all products</Link>

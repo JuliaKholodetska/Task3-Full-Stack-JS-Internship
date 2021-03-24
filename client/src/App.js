@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import ProductScreen from './pages/ProductPage';
-import HomeScreen from './pages/HomePage';
+import ProductPage from './pages/ProductPage';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <div className="grid-container">
         <header className="row">
           <div>
-            <a className="brand" href="index.html">Beauty Beach</a>
+            <a className="brand" href="/">Beauty Beach</a>
           </div>
           <div>
             <a href="/cart">Cart</a>
@@ -17,8 +17,8 @@ function App() {
           </div>
         </header>
         <main>
-          <Route path="/product/:id" component={ProductScreen}></Route>
-          <Route path="/" component={HomeScreen} exact></Route>
+          <Route path="/product/:id" component={ProductPage}></Route>
+          <Route path="/" component={HomePage} exact></Route>
         </main>
         <footer className="row center">All rights reserved</footer>
       </div>
