@@ -4,9 +4,9 @@
 
 Сosmetics store __Beauty Beach__ , contains products of the company Inglot.
 
-![image](https://user-images.githubusercontent.com/55590609/112390429-faaaa000-8cfe-11eb-8124-595d2574b581.png)
-![image](https://user-images.githubusercontent.com/55590609/112390480-12822400-8cff-11eb-80c5-0f8199d90d06.png)
-![image](https://user-images.githubusercontent.com/55590609/112390517-1f067c80-8cff-11eb-9504-cb376736e7e4.png)
+![image](https://user-images.githubusercontent.com/55590609/112390678-59701980-8cff-11eb-8d26-17c3dbcc1570.png)
+![image](https://user-images.githubusercontent.com/55590609/112390708-62f98180-8cff-11eb-9ed8-3bcdd75c6427.png)
+![image](https://user-images.githubusercontent.com/55590609/112390765-76a4e800-8cff-11eb-899c-65dd159bfda6.png)
 
 #Features & Tools
 - React
