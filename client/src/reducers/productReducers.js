@@ -1,4 +1,4 @@
-const {PRODUCT_LIST, PRODUCT_DETAILS} = require("../constants/productConstants");
+const { PRODUCT_LIST, PRODUCT_DETAILS } = require("../constants/productConstants");
 export const productListReducer = (state = { loading: true, products: [] }, action) => {
     switch (action.type) {
         case PRODUCT_LIST.REQUEST:
