@@ -8,10 +8,15 @@
 ![image](https://user-images.githubusercontent.com/55590609/112390708-62f98180-8cff-11eb-9ed8-3bcdd75c6427.png)
 ![image](https://user-images.githubusercontent.com/55590609/112390765-76a4e800-8cff-11eb-899c-65dd159bfda6.png)
 
-#Features & Tools
+#Tools
 - React
 - Redux
 - Express
+
+#Features
+-	API Design
+-	MVC design
+-	Scalable design
 
 # Quick Start
 
