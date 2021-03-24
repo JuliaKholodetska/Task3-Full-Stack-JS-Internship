@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import ProductScreen from './screens/ProductScreen';
-import HomeScreen from './screens/HomeScreen';
+import ProductScreen from './pages/ProductPage';
+import HomeScreen from './pages/HomePage';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="/product/:id" component={ProductScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
-        <footer className="row center">All right reserved</footer>
+        <footer className="row center">All rights reserved</footer>
       </div>
     </BrowserRouter>
   );

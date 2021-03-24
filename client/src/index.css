@@ -142,7 +142,7 @@ img {
   background-color: #faf7f118;
 }
 
-.card-body>* {
+.card-body > * {
   margin-bottom: 0.2 rem;
 }
 
