@@ -19,6 +19,7 @@ export default function ProductPage(props) {
     const addToCartHandler = () => {
         props.history.push(`/cart/${productId}?qty=${qty}`);
     };
+
     return (
         <div>
             { loading ? (
