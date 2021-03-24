@@ -1,12 +1,13 @@
 # Task3-Full-Stack-JS-Intership
 
 #eShop
+
 Сosmetics store __Beauty Beach__ , contains products of the company Inglot.
 
 #Features & Tools
--React
--Redux
--Express
+- React
+- Redux
+- Express
 
 # Quick Start
 
