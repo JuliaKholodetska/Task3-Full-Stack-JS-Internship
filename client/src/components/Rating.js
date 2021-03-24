@@ -7,10 +7,11 @@ export default function Rating(props) {
         ratings.push(
             <span><i className={rating >= i ? "fa fa-star" : rating >= i - 0.5 ? 'fa fa-star-half-o' : 'fa fa-star-o'}></i></span>)
     }
+
     return (
         <div className="rating">
-            {ratings.map(item => item)}
-            <span>{numReviews + ' reviews'}</span>
+            {ratings}
+            <span>{numReviews >= 1 ? numReviews + ' reviews' : ' '}</span>
         </div>
     );
 }
