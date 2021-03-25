@@ -4,7 +4,7 @@ export default function Rating(props) {
 	const { rating, numReviews } = props;
 	const ratings = [];
 
-	for (let i = 1; i < 5; i++) {
+	for (let i = 1; i <= 5; i++) {
 		ratings.push(
 			<span>
 				<i
