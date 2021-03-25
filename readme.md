@@ -4,6 +4,7 @@
 
 #Features & Tools
 -React
+-Redux
 -Express
 
 # Quick Start
@@ -19,7 +20,9 @@ npm install
 ```
 npm run dev
 ```
+
 ### Run React from client
+
 ```
 npm start
 
