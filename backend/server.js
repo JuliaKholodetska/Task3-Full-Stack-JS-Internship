@@ -17,7 +17,7 @@ app.get("/api/products/:id", (req, res) => {
 	}
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 app.listen(port, () => {
 	console.log(`Server at http://localhost:${port}`);
 });
