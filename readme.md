@@ -4,6 +4,7 @@
 
 #Features & Tools
 -React
+-Redux
 -Express
 
 # Quick Start
