@@ -9,7 +9,7 @@ import Rating from "../components/Rating";
 export default function ProductPage(props) {
 	const dispatch = useDispatch();
 	const productId = props.match.params.id;
-	const [qty, setQty] = useState(1);
+	const [quantity, setQty] = useState(1);
 	const productDetails = useSelector((state) => state.productDetails);
 	const { loading, error, product } = productDetails;
 
@@ -17,7 +17,7 @@ export default function ProductPage(props) {
 		dispatch(detailsProduct(productId));
 	}, [dispatch, productId]);
 	const addToCartHandler = () => {
-		props.history.push(`/cart/${productId}?qty=${qty}`);
+		props.history.push(`/cart/${productId}?quantity=${quantity}`);
 	};
 
 	return (
@@ -86,7 +86,7 @@ export default function ProductPage(props) {
 													<div>Qty</div>
 													<div>
 														<select
-															value={qty}
+															value={quantity}
 															onChange={(e) => setQty(e.target.value)}
 														>
 															{[...Array(product.countInStock).keys()].map(

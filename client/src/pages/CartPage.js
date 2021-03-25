@@ -6,7 +6,7 @@ import MessageBox from "../components/MessageBox";
 
 export default function CartPage(props) {
 	const productId = props.match.params.id;
-	const qty = props.location.search
+	const quantity = props.location.search
 		? Number(props.location.search.split("=")[1])
 		: 1;
 	const cart = useSelector((state) => state.cart);
@@ -14,9 +14,9 @@ export default function CartPage(props) {
 	const dispatch = useDispatch();
 	useEffect(() => {
 		if (productId) {
-			dispatch(addToCart(productId, qty));
+			dispatch(addToCart(productId, quantity));
 		}
-	}, [dispatch, productId, qty]);
+	}, [dispatch, productId, quantity]);
 
 	const removeFromCartHandler = (id) => {
 		dispatch(removeFromCart(id));
@@ -51,8 +51,8 @@ export default function CartPage(props) {
 									</div>
 									<div>
 										<select
-											className="qty-cart"
-											value={item.qty}
+											className="quantity-cart"
+											value={item.quantity}
 											onChange={(e) =>
 												dispatch(
 													addToCart(item.product, Number(e.target.value))
@@ -86,8 +86,8 @@ export default function CartPage(props) {
 					<ul>
 						<li>
 							<h2>
-								Subtotal ({cartItems.reduce((a, c) => a + c.qty, 0)} items) : $
-								{cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
+								Subtotal ({cartItems.reduce((a, c) => a + c.quantity, 0)} items)
+								: ${cartItems.reduce((a, c) => a + c.price * c.quantity, 0)}
 							</h2>
 						</li>
 						<li>
