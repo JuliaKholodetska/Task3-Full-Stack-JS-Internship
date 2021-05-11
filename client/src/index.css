@@ -1,0 +1,186 @@
+html {
+	font-size: 0.625rem;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	font-size: 1.6rem;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+	height: 100%;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas: "header" "main" "footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 5rem 1fr 5rem;
+	height: 100%;
+}
+
+header {
+	grid-area: header;
+	background-color: #000000bb;
+	height: 60px;
+}
+
+main {
+	grid-area: main;
+	padding: 1rem;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+footer {
+	grid-area: footer;
+	background-color: #000000bb;
+	color: #ffffff;
+}
+
+h1 {
+	font-size: 1.8rem;
+	padding: 1rem 0;
+}
+
+h2 {
+	font-size: 1.1rem;
+	padding: 1rem 0;
+	color: #32261c;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f7bbbb;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+li {
+	margin-top: 1rem;
+}
+
+button {
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border: 0.1rem #a4a4a4 solid;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #f7bbbb;
+	cursor: pointer;
+}
+
+button.primary {
+	background-color: #f59595;
+	color: #ffffff;
+}
+
+button.block {
+	margin-top: 10px;
+	width: 100%;
+}
+
+header a {
+	color: #ffffff;
+	padding: 1rem;
+}
+
+a.brand {
+	color: #f7bbbb;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.row.center {
+	justify-content: center;
+}
+
+.row-product.center {
+	justify-content: center;
+}
+
+img {
+	border-radius: 0.1rem;
+	width: 160px;
+	height: 150px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-left: 20px;
+}
+
+.card {
+	border: 0.1rem #c0c0c0 solid;
+	background-color: #f8f8f8;
+	border-radius: 0.2rem;
+	margin: 1rem;
+	width: 200px;
+	height: 280px;
+}
+
+.card-body {
+	padding: 1rem;
+	background-color: #faf7f118;
+}
+
+.card-body > * {
+	margin-bottom: 0.2rem;
+}
+
+.price {
+	font-size: 2rem;
+}
+
+.rating span {
+	color: rgb(144, 89, 89);
+	margin: 0.1rem;
+}
+
+.rating span :last-child {
+	color: #f7bbbb;
+}
+
+.succes {
+	color: #20a020;
+}
+
+.error {
+	color: #a02020;
+}
+
+.large {
+	height: 600px;
+	width: 600px;
+}
+
+.col-1 {
+	flex: 1 2 25rem;
+}
+.ad-slot-home-page {
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+.ad-slot-product-page {
+	margin-top: 20px;
+}
